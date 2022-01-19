@@ -8,6 +8,10 @@ export const products = [
       title: 'Нямушка',
       subTitle: 'с фуа-гра',
       description: '',
+      image: {
+        default: '/images/product/cat.jpg',
+        retina: '/images/product/cat@2x.jpg'
+      },
       weight: 0.5,
     }
   },
@@ -20,6 +24,10 @@ export const products = [
       title: 'Нямушка',
       subTitle: 'с рыбой',
       description: '',
+      image: {
+        default: '/images/product/cat.jpg',
+        retina: '/images/product/cat@2x.jpg'
+      },
       weight: 2,
     }
   },
@@ -32,6 +40,10 @@ export const products = [
       title: 'Нямушка',
       subTitle: 'с курой',
       description: '',
+      image: {
+        default: '/images/product/cat.jpg',
+        retina: '/images/product/cat@2x.jpg'
+      },
       weight: 5,
     }
   }
