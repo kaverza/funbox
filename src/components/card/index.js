@@ -1,5 +1,6 @@
 import styles from './styles.module.scss';
 import cn from 'classnames';
+import {useState} from "react";
 
 const Card = ({ isSelected, isDisabled, data = {} }) => {
   const {
@@ -11,12 +12,25 @@ const Card = ({ isSelected, isDisabled, data = {} }) => {
     weight
   } = data;
 
+  const [selected, setSelected] = useState(isSelected);
+
+  const onSelected = (selected) => {
+    if (isDisabled) {
+      return;
+    }
+
+    setSelected(selected);
+  }
+
   return (
     <>
-      <div className={cn(styles.card, {
-        [styles['card--selected']]: isSelected,
-        [styles['card--disabled']]: isDisabled
-      })}>
+      <div
+        className={cn(styles.card, {
+          [styles['card--selected']]: selected,
+          [styles['card--disabled']]: isDisabled
+        })}
+        onClick={() => onSelected(!selected)}
+      >
         <div className={cn(styles['card__wrap'])}>
           <div className={cn(styles['card__content'])}>
             <div className={cn(styles['card__pre-title'])}>
