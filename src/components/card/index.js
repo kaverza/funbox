@@ -1,4 +1,4 @@
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 import cn from 'classnames';
 import { ReactComponent as CardMask } from '../../assets/images/card.svg';
 

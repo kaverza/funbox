@@ -1,4 +1,4 @@
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 import Card from "../components/card";
 import cn from "classnames";
 import { products } from "../products";

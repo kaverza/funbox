@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Exo2.0-Thin';
-  src: url(assets/fonts/Exo2.0-Thin.otf) format('opentype');
+  src: url(../assets/fonts/Exo2.0-Thin.otf) format('opentype');
   font-display: swap;
 }
 *,
@@ -21,7 +21,7 @@ body {
     180deg, rgba(0, 0, 0, 0.5) 0%,
     rgba(0, 0, 0, 5e-05) 49.88%,
     rgba(0, 0, 0, 0.5) 100%
-  ), url(assets/images/bg.jpg);
+  ), url(../assets/images/bg.jpg);
   background-size: 140px;
 }
 .svg-hidden {
