@@ -7,7 +7,6 @@ const Card = ({ isSelected, isDisabled, data = {} }) => {
   const {
     title,
     subTitle,
-    description,
     composition,
     features,
     image,
@@ -26,7 +25,7 @@ const Card = ({ isSelected, isDisabled, data = {} }) => {
 
   return (
       <div
-        className={cn(styles.card)}
+        className={cn(styles['card'])}
       >
         <div
           className={cn(styles['card__wrap'], {
