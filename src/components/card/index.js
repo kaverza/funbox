@@ -18,10 +18,6 @@ const Card = ({ isSelected, isDisabled, data = {} }) => {
   const [isMouseLeave, setIsMouseLeave] = useState(isSelected);
   const [isHover, setIsHover] = useState(false);
 
-
-  console.log('render');
-
-  //console.log({selected, isHover, isMouseLeave});
   const onSelectedHandler = (selected) => {
     if (isDisabled) {
       return;
