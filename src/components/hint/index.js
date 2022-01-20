@@ -18,12 +18,13 @@ const Hint = (props) => {
       {!isSelected && !isDisabled && (
         <>
           {defaultText + ' '}
-          <span
+          <a
+            href={false}
             className={cn(styles['hint__button'])}
             onClick={onSelect}
           >
             <span>купи</span>.
-          </span>
+          </a>
         </>
       )}
 

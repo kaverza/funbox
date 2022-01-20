@@ -24,6 +24,8 @@
 .card {
   $instance: &;
   max-width: 320px;
+  min-width: 250px;
+
   width: 100%;
   &__wrap {
     position: relative;
