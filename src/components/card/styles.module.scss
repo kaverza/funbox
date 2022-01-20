@@ -9,12 +9,12 @@
     }
 
     @if($isDisabled) {
-      #{$parent}__title {
+      #{$parent}__title,
+      #{$parent}__pre-title,
+      #{$parent}__features {
         color: $color;
       }
-      #{$parent}__pre-title {
-        color: $color;
-      }
+
       #{$parent}__image {
         opacity: .5;
       }
@@ -84,14 +84,21 @@
     font-size: 48px;
     line-height: 56px;
     font-weight: bold;
-    margin: 0;
+    margin: 0 0 13px;
     color: #000;
     span {
       display: block;
       font-size: 24px;
       line-height: 28px;
     }
+  }
 
+  &__features {
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
   &__weight {

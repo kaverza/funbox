@@ -5,11 +5,11 @@ import Hint from "../hint";
 
 const Card = ({ isSelected, isDisabled, data = {} }) => {
   const {
-    preTitle,
     title,
     subTitle,
     description,
     composition,
+    features,
     image,
     weight
   } = data;
@@ -37,15 +37,15 @@ const Card = ({ isSelected, isDisabled, data = {} }) => {
         >
           <div className={cn(styles['card__content'])}>
             <div className={cn(styles['card__pre-title'])}>
-              {preTitle}
+              Сказочное заморское яство
             </div>
             <h2 className={cn(styles['card__title'])}>
               {title}
               {subTitle && <span>{subTitle}</span>}
             </h2>
-            {description && (
-              <div className={cn(styles['card__description'])}>
-                {description}
+            {features.length && (
+              <div className={cn(styles['card__features'])}>
+                {features.map(item => (<p dangerouslySetInnerHTML={{__html: item}} />))}
               </div>
             )}
             <div className={cn(styles['card__weight'])}>

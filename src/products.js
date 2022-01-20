@@ -4,10 +4,12 @@ export const products = [
     isSelected: false,
     isDisabled: false,
     data: {
-      preTitle: 'Сказочное заморское яство',
       title: 'Нямушка',
       subTitle: 'с фуа-гра',
-      description: '',
+      features: [
+        '<strong>10</strong> порций',
+        'мышь в подарок'
+      ],
       composition: 'Печень утки разварная с артишоками.',
       image: {
         default: '/images/product/cat.jpg',
@@ -21,10 +23,12 @@ export const products = [
     isSelected: true,
     isDisabled: false,
     data: {
-      preTitle: 'Сказочное заморское яство',
       title: 'Нямушка',
       subTitle: 'с рыбой',
-      description: '',
+      features: [
+        '<strong>40</strong> порций',
+        '<strong>2</strong> мыши в подарок'
+      ],
       composition: 'Головы щучьи с чесноком да свежайшая сёмгушка.',
       image: {
         default: '/images/product/cat.jpg',
@@ -38,10 +42,13 @@ export const products = [
     isSelected: false,
     isDisabled: true,
     data: {
-      preTitle: 'Сказочное заморское яство',
       title: 'Нямушка',
       subTitle: 'с курой',
-      description: '',
+      features: [
+        '<strong>100</strong> порций',
+        '<strong>5</strong> мышей в подарок',
+        'заказчик доволен'
+      ],
       composition: 'Филе из цыплят с трюфелями в бульоне.',
       image: {
         default: '/images/product/cat.jpg',
