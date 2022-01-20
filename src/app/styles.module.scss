@@ -1,0 +1,21 @@
+.app {
+  max-width: 1160px;
+  padding: 37px 20px;
+  margin: 0 auto;
+  min-width: 320px;
+}
+.title {
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: normal;
+  margin: 0 0 23px;
+}
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  @media (max-width: 960px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
