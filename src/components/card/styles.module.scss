@@ -80,6 +80,9 @@
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 6px;
+    &--cl-red {
+      color: $color-selected-hover;
+    }
   }
 
   &__title {
