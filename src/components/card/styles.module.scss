@@ -1,9 +1,9 @@
 @use "../../styles/variables" as *;
 
 @mixin card($color, $parent: &, $isDisabled: false) {
-    #{$parent}__wrap {
-      background-color: $color;
-    }
+
+    background-color: $color;
+
     #{$parent}__weight {
       background-color: $color;
     }
@@ -31,13 +31,28 @@
     clip-path: url(#mask-card);
     padding: 4px;
     color: #666;
-  }
 
-  @include card($color-default);
+    @include card($color-default, $instance);
 
-  &:hover {
-    cursor: pointer;
-    @include card($color-default-hover, $instance);
+    &:hover {
+      cursor: pointer;
+      @include card($color-default-hover, $instance);
+    }
+
+    &--selected {
+      @include card($color-selected, $instance);
+      &:hover {
+        @include card($color-selected-hover, $instance);
+      }
+    }
+
+    &--disabled {
+      @include card($color-disabled, $instance, true);
+      &:hover {
+        cursor: default;
+        @include card($color-disabled, $instance, true);
+      }
+    }
   }
 
   &__content {
@@ -81,8 +96,8 @@
 
   &__weight {
     position: absolute;
-    right: 15px;
-    bottom: 15px;
+    right: 12px;
+    bottom: 12px;
     text-align: center;
     color: #fff;
     font-size: 42px;
@@ -96,22 +111,6 @@
       display: block;
       font-size: 21px;
       line-height: 22px;
-    }
-
-  }
-
-  &--selected {
-    @include card($color-selected, $instance);
-    &:hover {
-      @include card($color-selected-hover, $instance);
-    }
-  }
-
-  &--disabled {
-    @include card($color-disabled, $instance, true);
-    &:hover {
-      cursor: default;
-      @include card($color-disabled, $instance, true);
     }
   }
 }

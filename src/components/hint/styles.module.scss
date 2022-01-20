@@ -1,0 +1,20 @@
+.hint {
+  font-size: 13px;
+  line-height: 15px;
+  padding: 14px 0;
+  text-align: center;
+  color: #fff;
+
+  &__button {
+    color: #22A7E9;
+    cursor: pointer;
+    font-weight: bold;
+    span {
+      border-bottom: 1px dashed;
+    }
+  }
+
+  &--disabled {
+    color: #FFFF66;
+  }
+}

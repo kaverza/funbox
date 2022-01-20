@@ -8,6 +8,7 @@ export const products = [
       title: 'Нямушка',
       subTitle: 'с фуа-гра',
       description: '',
+      composition: 'Печень утки разварная с артишоками.',
       image: {
         default: '/images/product/cat.jpg',
         retina: '/images/product/cat@2x.jpg'
@@ -24,6 +25,7 @@ export const products = [
       title: 'Нямушка',
       subTitle: 'с рыбой',
       description: '',
+      composition: 'Головы щучьи с чесноком да свежайшая сёмгушка.',
       image: {
         default: '/images/product/cat.jpg',
         retina: '/images/product/cat@2x.jpg'
@@ -40,6 +42,7 @@ export const products = [
       title: 'Нямушка',
       subTitle: 'с курой',
       description: '',
+      composition: 'Филе из цыплят с трюфелями в бульоне.',
       image: {
         default: '/images/product/cat.jpg',
         retina: '/images/product/cat@2x.jpg'
