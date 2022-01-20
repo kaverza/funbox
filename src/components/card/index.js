@@ -1,7 +1,7 @@
-import {useCallback, memo} from "react";
+import {memo} from "react";
 import styles from './styles.module.scss';
 import cn from 'classnames';
-import {useMemo, useState} from "react";
+import {useState} from "react";
 import Hint from "../hint";
 
 const Card = ({ isSelected, isDisabled, data = {} }) => {
